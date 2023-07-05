@@ -17,11 +17,12 @@ terraform {
 
 variable "resource_group_name" {
   type = string
+  default = "RG-VNET"
 }
 
 variable "location" {
   type    = string
-  default = "eastus"
+  default = "westeurope"
 }
 
 
@@ -69,7 +70,7 @@ module "vnet-main" {
 
   tags = {
     environment = "dev"
-    costcenter  = "it"
+    costcenter  = "personal"
 
   }
 
