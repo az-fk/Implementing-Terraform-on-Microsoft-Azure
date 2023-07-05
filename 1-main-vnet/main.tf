@@ -17,7 +17,6 @@ terraform {
 
 variable "resource_group_name" {
   type = string
-  default = "RG-VNET"
 }
 
 variable "location" {
